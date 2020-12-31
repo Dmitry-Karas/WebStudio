@@ -6,20 +6,25 @@
 
   &--page-header {
     color: #000;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-right: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
 
   &--page-footer {
     color: #fff;
   }
 
-  @media screen and(min-width: 1200px) {
-    font-size: 26px;
-    line-height: 1.19;
+  // @media screen and(min-width: 1200px) {
+  //   font-size: 26px;
+  //   line-height: 1.19;
 
-    &--page-header {
-      margin-right: 93px;
-    }
-  }
+  // }
 }
 
 .logo__segment {

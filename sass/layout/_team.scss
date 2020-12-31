@@ -8,12 +8,13 @@
 
 .team__list {
   @media screen and (min-width: 768px) {
-    // display: flex;
+    display: flex;
   }
 
-  @media screen and (min-width: 768px) and (min-width: 1199px) {
-    // flex-wrap: wrap;
-    // justify-content: space-between;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
   }
 }
 
@@ -31,22 +32,37 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    // flex-basis: calc(100% / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+
+    flex-basis: calc(100% / 2 - 30px);
     // justify-content: space-between;
   }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.team__img {
+  // margin: auto;
 }
 
 .team__card-content {
   padding-top: 30px;
-  padding-bottom: 24px;
-}
 
-// .team__card-content {
-//   padding-top: 30px;
-//   padding-right: 32px;
-//   padding-bottom: 30px;
-//   padding-left: 32px;
-// }
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+    // padding-right: 32px;
+    // padding-left: 32px;
+  }
+}
 
 .team__name {
   @include team-card-font;
