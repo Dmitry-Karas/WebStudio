@@ -1,8 +1,18 @@
 .logo {
+  display: inline-block;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 1.16;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  @media screen and(min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 
   &--page-header {
     color: #000;
@@ -17,14 +27,10 @@
   }
 
   &--page-footer {
+    margin-bottom: 20px;
+
     color: #fff;
   }
-
-  // @media screen and(min-width: 1200px) {
-  //   font-size: 26px;
-  //   line-height: 1.19;
-
-  // }
 }
 
 .logo__segment {
