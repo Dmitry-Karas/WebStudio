@@ -15,8 +15,8 @@
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
   }
 }
 
@@ -28,9 +28,9 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-top: 30px;
-    margin-left: 30px;
-    flex-basis: calc(100% / 2 - 30px);
+    margin-top: var(--card-set-gap);
+    margin-left: var(--card-set-gap);
+    flex-basis: calc(100% / 2 - var(--card-set-gap));
   }
 
   @media screen and (min-width: 1200px) {

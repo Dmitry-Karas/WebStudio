@@ -145,6 +145,7 @@ textarea {
     position: absolute;
     top: calc(100% + 1px);
     left: 0;
+    z-index: 999;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -371,12 +372,24 @@ textarea {
   }
 }
 
+.menu-button:hover, .menu-button:focus {
+  color: var(--accent-color);
+}
+
+.menu-button__icon-close {
+  fill: currentColor;
+}
+
 .menu-button .menu-button__icon-close {
   display: none;
 }
 
 .menu-button.is-open .menu-button__icon-close {
   display: block;
+}
+
+.menu-button__icon-menu {
+  fill: currentColor;
 }
 
 .menu-button .menu-button__icon-menu {
@@ -837,11 +850,22 @@ textarea {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
+@media screen and (max-width: 768px) {
+  .page-footer__input {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .page-footer__input {
     display: block;
-    width: 450px;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__input {
+    width: 450px;
   }
 }
 
