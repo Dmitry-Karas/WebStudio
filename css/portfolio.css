@@ -364,6 +364,8 @@ textarea {
   margin-left: auto;
   border: none;
   background-color: transparent;
+  -webkit-transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 }
 
 @media screen and (min-width: 768px) {

@@ -5,6 +5,8 @@
   border: none;
   background-color: transparent;
 
+  transition: color 250ms var(--timing-function);
+
   @media screen and(min-width:768px) {
     display: none;
   }
