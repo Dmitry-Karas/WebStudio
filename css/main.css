@@ -545,6 +545,25 @@ textarea {
   }
 }
 
+.team__img {
+  width: 450px;
+  height: 460px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__img {
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__img {
+    width: 270px;
+    height: 260px;
+  }
+}
+
 .team__card-content {
   padding-top: 30px;
 }
