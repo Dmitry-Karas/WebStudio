@@ -546,8 +546,8 @@ textarea {
 }
 
 .team__img {
-  width: 450px;
-  height: 460px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
