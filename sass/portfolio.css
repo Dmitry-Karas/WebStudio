@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid red;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -546,8 +550,6 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .portfolio__filter {
-    margin-top: -15px;
-    margin-left: -8px;
     padding-bottom: 40px;
   }
 }
@@ -576,16 +578,13 @@ textarea {
   border: none;
 }
 
-@media screen and (min-width: 768px) {
-  .portfolio__filter-item:not(:last-child) {
-    margin-right: 8px;
-  }
+.portfolio__filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 @media screen and (max-width: 767px) {
-  .portfolio__filter-item {
-    margin-top: 15px;
-    margin-left: 8px;
+  .portfolio__filter-item:first-child {
+    margin-bottom: 15px;
   }
 }
 
@@ -927,4 +926,3 @@ textarea {
 .page-footer__send-icon {
   margin-left: 10px;
 }
-/*# sourceMappingURL=portfolio.css.map */
