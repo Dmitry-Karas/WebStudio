@@ -1,5 +1,9 @@
 .clients__title {
   @include title-section;
+
+  @media screen and (min-width: 1200px) {
+    @include title-section-desktop;
+  }
 }
 
 .clients__list {

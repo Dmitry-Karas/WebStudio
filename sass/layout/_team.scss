@@ -4,6 +4,10 @@
 
 .team__title {
   @include title-section;
+
+  @media screen and (min-width: 1200px) {
+    @include title-section-desktop;
+  }
 }
 
 .team__list {

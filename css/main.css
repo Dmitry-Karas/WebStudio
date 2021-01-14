@@ -437,6 +437,7 @@ textarea {
 
 .services {
   display: none;
+  padding-bottom: 94px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -452,6 +453,18 @@ textarea {
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .services__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--title-text-color);
+  }
 }
 
 .services__list {
@@ -497,6 +510,18 @@ textarea {
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--title-text-color);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -648,6 +673,18 @@ textarea {
   line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--title-text-color);
+  }
 }
 
 .clients__list {

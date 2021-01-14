@@ -1,5 +1,6 @@
 .services {
   display: none;
+  padding-bottom: 94px;
 
   @media screen and (min-width: 1200px) {
     display: block;
@@ -8,6 +9,10 @@
 
 .services__title {
   @include title-section;
+
+  @media screen and (min-width: 1200px) {
+    @include title-section-desktop;
+  }
 }
 
 .services__list {
