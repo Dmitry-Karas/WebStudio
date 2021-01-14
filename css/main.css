@@ -3,6 +3,8 @@ body {
   font-weight: 400;
   letter-spacing: 0.03em;
   background-color: var(--primary-background-color);
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
 }
 
 body.modal-open {
@@ -811,6 +813,8 @@ textarea {
   height: 100%;
   overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   opacity: 1;
   -webkit-transition: opacity 250ms var(--timing-function);
   transition: opacity 250ms var(--timing-function);
@@ -841,6 +845,52 @@ textarea {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   -webkit-transition: color 250ms var(--timing-function);
   transition: color 250ms var(--timing-function);
+}
+
+.button__hero {
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 250ms var(--timing-function);
+  transition: -webkit-transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+}
+
+@-webkit-keyframes sheen {
+  100% {
+    -webkit-transform: rotateZ(60deg) translate(1em, -9em);
+            transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+
+@keyframes sheen {
+  100% {
+    -webkit-transform: rotateZ(60deg) translate(1em, -9em);
+            transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+
+.button__hero::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -70%;
+  bottom: -50%;
+  left: -100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 150, 243, 0)), color-stop(50%, rgba(255, 255, 255, 0.7)), to(rgba(33, 150, 243, 0)));
+  background: linear-gradient(to bottom, rgba(33, 150, 243, 0), rgba(255, 255, 255, 0.7) 50%, rgba(33, 150, 243, 0));
+  -webkit-transform: rotateZ(60deg) translate(-5em, 7.5em);
+          transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+.button__hero:hover, .button__hero:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.button__hero:hover::after, .button__hero:focus::after {
+  -webkit-animation: sheen 250ms var(--timing-function) 2 250ms alternate;
+          animation: sheen 250ms var(--timing-function) 2 250ms alternate;
 }
 
 .close-button {
@@ -1011,6 +1061,10 @@ textarea {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+  -webkit-animation-timing-function: var(--timing-function);
+          animation-timing-function: var(--timing-function);
 }
 
 @media screen and (max-width: 1199px) {

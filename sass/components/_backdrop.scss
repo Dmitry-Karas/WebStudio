@@ -12,6 +12,7 @@
   overflow-y: scroll;
 
   background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
 
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
@@ -20,13 +21,4 @@
     opacity: 0;
     pointer-events: none;
   }
-
-  //   @media screen and (max-width: 767px) {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
-  //   }
-  //   @media screen and (min-width: 767px) and (max-width: 1199px) {
-  //     padding-top: 94px;
-  //     padding-bottom: 94px;
-  //   }
 }

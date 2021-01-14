@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">Web Studio (Version 2.0)</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -15,11 +19,13 @@
     />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
-  <body>
+  <body class="animate__fadeIn">
     <!-- ========== HEADER ========== -->
     <header class="page-header">
       <div class="container">
-        <a class="logo logo--page-header" href="index.html"
+        <a
+          class="logo logo--page-header animate__bounceInLeft"
+          href="index.html"
           ><span class="logo__segment">Web</span>Studio</a
         >
         <button class="menu-button" data-menu-button type="button">
@@ -75,7 +81,7 @@
 
       <section class="hero">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button hero__button" type="button" data-modal-open>
+        <button class="button button__hero" type="button" data-modal-open>
           Заказать услугу
         </button>
       </section>

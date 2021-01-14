@@ -7,6 +7,8 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--primary-background-color);
 
+  animation-duration: 1500ms;
+
   &.modal-open {
     overflow: hidden;
   }

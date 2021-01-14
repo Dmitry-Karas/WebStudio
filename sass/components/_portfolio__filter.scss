@@ -1,6 +1,7 @@
 .portfolio__filter {
   display: flex;
   flex-wrap: wrap;
+  animation-duration: 1500ms;
 
   @media screen and (max-width: 767px) {
     margin-top: -15px;
