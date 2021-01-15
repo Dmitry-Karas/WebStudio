@@ -142,6 +142,11 @@ textarea {
   }
 }
 
+.page-header__menu {
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+}
+
 @media screen and (max-width: 767px) {
   .page-header__menu {
     position: absolute;
@@ -916,12 +921,17 @@ textarea {
   cursor: pointer;
   background-color: var(--primary-background-color);
   fill: currentColor;
-  -webkit-transition: color 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function);
+  -webkit-transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function), transform 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function), transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
 }
 
 .close-button:hover, .close-button:focus {
   color: var(--accent-color);
+  border-color: var(--accent-color);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .menu-button {
