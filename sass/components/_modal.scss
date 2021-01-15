@@ -19,10 +19,11 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  transition: transform 250ms var(--timing-function);
+  transition: transform 500ms var(--timing-function) 250ms;
 
   .backdrop.is-hidden & {
-    transform: scale(0) rotateX(-180deg);
+    transform: scale(0) rotateX(-90deg);
+    transition: transform 500ms var(--timing-function);
   }
 }
 
