@@ -3,8 +3,8 @@ body {
   font-weight: 400;
   letter-spacing: 0.03em;
   background-color: var(--primary-background-color);
-  -webkit-animation-duration: 1500ms;
-          animation-duration: 1500ms;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
 }
 
 body.modal-open {
@@ -140,11 +140,6 @@ textarea {
   .page-header {
     height: 60px;
   }
-}
-
-.page-header__menu {
-  -webkit-animation-duration: 1500ms;
-          animation-duration: 1500ms;
 }
 
 @media screen and (max-width: 767px) {
@@ -855,6 +850,12 @@ textarea {
 }
 
 .button__hero {
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
   position: relative;
   overflow: hidden;
   -webkit-transition: -webkit-transform 250ms var(--timing-function);
@@ -1075,8 +1076,8 @@ textarea {
   font-weight: 700;
   -webkit-animation-duration: 1500ms;
           animation-duration: 1500ms;
-  -webkit-animation-timing-function: var(--timing-function);
-          animation-timing-function: var(--timing-function);
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
 @media screen and (max-width: 1199px) {

@@ -10,8 +10,6 @@
 }
 
 .page-header__menu {
-  animation-duration: 1500ms;
-
   @media screen and(max-width: 767px) {
     position: absolute;
     top: calc(100% + 1px);
